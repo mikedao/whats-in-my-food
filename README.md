@@ -7,7 +7,7 @@ Documentation: https://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md
 As a user,
 When I visit "/"
 And I fill in the search form with "sweet potatoes"
-(Note: Use te existing search form)
+(Note: Use the existing search form)
 And I click "Search"
 Then I should be on page "/foods"
 Then I should see a total of the number of items returned by the search. (531 for sweet potatoes)
