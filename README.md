@@ -1,11 +1,23 @@
+Background:  We will be querying the USDA API with an ingredient and
+we will be retreiving a list of the ten most relevant foods that include that
+ingredient.
+
+
 ```
- As a user
- When I visit "/"
- And I enter "tiger" in the search box
- and I click "Search"
- Then my path should be /search with "q=tiger" in the parameters
- And I should see "5 Results"
- And I should see an id, a url, and the gif.
+As a user,
+When I visit "/"
+And I fill in the search form with "sweet potatoes"
+(Note: Use te existing search form)
+And I click "Search"
+Then I should be on page "/foods"
+Then I should see a list of ten foods sorted by relevance.
+
+And for each of the foods I should see:
+- The food's NDB Number
+- The food's name
+- The food group to which the food belongs
+- The food's data source
+- The food's manufacturer
 ```
 
 
